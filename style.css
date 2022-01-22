@@ -1,0 +1,121 @@
+@import url('https://fonts.googleapis.com/css2?family=Courier+Prime:ital,wght@0,400;0,700;1,400&display=swap');
+
+* {
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 16px;
+}
+
+html, body {
+    margin: 0;
+    padding: 0;
+    
+}
+
+body, button, input, select, textarea {
+    font-family: 'Courier Prime', monospace;
+    font-size: 2rem;
+}
+
+.container {
+    background: darkturquoise;
+    margin: auto;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+}
+
+.container-timer {
+    background: mediumblue;
+    max-width: 700px;
+    height: 450px;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    border: double 8px white;
+    box-shadow: 25px 25px 0px black;
+}
+
+.container-content {
+    text-align: center;
+}
+
+.container-content label {
+    color: white;
+    font-size: 1.8rem;
+    margin-right: 10px;
+}
+
+.container-content input {
+    width: 20%;
+    text-align: center;
+}
+
+.set-time form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.display-timer {
+    padding: 20px 0;
+}
+
+.display-timer .timer {
+    color: gold;
+    font-size: 6rem;
+}
+
+
+.timer-btn {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.timer-btn .btn {
+    background: white;
+    padding: 20px;
+    border: none;
+    box-shadow: 15px 15px 0px black;
+    cursor: pointer;
+}
+
+.timer-btn .btn:active{
+    box-shadow: 10px 10px 0px black;
+    transform: translateY(4px)
+}
+
+/* RESPONSIVIDADE */
+
+@media (max-width: 767px) {
+    .set-time form {
+        flex-direction: column;
+    }
+
+    .timer-btn {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .timer-btn .btn {
+        margin-bottom: 25px;
+    }
+
+    .container-timer {
+        height: 80vh;
+    }
+
+    .container-content .timer {
+        font-size: 5rem;
+    }
+
+    .container-content label {
+        font-size: 1.4rem;
+        margin-right: 0px;
+        margin-bottom: 10px;
+    }
+}
