@@ -52,6 +52,7 @@ body, button, input, select, textarea {
 
 .container-content input {
     width: 20%;
+    height: 60px;
     text-align: center;
 }
 
@@ -108,6 +109,10 @@ body, button, input, select, textarea {
 
     .container-timer {
         height: auto;
+    }
+
+    .container-content input {
+        width: 30%;
     }
 
     .container-content .timer {
